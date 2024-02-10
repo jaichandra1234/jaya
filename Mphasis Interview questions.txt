@@ -1,0 +1,13 @@
+                    Mphasis Interview questions
+
+
+
+* how to check running containers in docker using command in docker?
+* what is auto scaling 
+* what is load average in linux?
+* what is containerization
+* what is merge conflicts on github 
+* what is use of IGW and NGW
+* how access internet in private subnet server
+* Can we have same name for two S3 buckets?
+* Can we increate storage of RDS instance?
