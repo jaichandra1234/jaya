@@ -1,0 +1,14 @@
+* Explain about k8s architecture?
+* Explain CICD pipeline structure in your organization?
+* What is plugins used in Jenkins?
+* What is git stash?
+* what are commands to debugg the k8s applications?
+* List instructions in Dockerfile?
+* What is diff between CMD & ENTRYPOINT, COPY & ADD instructions?
+* Command to build docker image?
+* How do you authenticate docker registry?
+* How to check details of pods in k8s using command?
+* What is ingress and why we use in k8s?
+* Steps to integrate sonar with Jenkins?
+* Branching strategy in your organization?
+* Multi-Staging docker file use case ?
