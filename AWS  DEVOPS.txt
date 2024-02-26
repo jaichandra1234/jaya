@@ -1,0 +1,122 @@
+                                               AWS DEVOPS
+
+
+
+    GIT:
+
+# yum install git
+# git init .        (to create a repositary)
+# vim file1
+# git add file1
+# git commit -m "file1commits" file1
+# git remote add origin(copy in github repositary)
+# git push
+
+* user name
+* password:              (to create a token: profilr-settings-devoloper setting-personal access token-gen new tkn
+                          (repo-writing packages-delite packager-admin packages)
+
+      MAVEN:
+
+
+# wget (https://dlcdn.apache.org)  (maven v3  - bainaries - copy)
+# tar -zxvf (copy the above tar file)
+# cd to apache maven 3.8.6/
+# yum install java
+# yum install maven
+# mvn archetype : generate      (enter,enter)
+     group id -- batch
+     artifactory -- devops
+     enter 
+     y
+# mvn compile
+# mvn test
+# mvn package
+# mvn install
+
+    
+      JENKINS (Master)
+
+
+# jenkins repo
+# yum install java,git,maven,jenkins
+# systemctl restart
+# systemctl status
+# vim /etc/passwd    {bin/false  change to bin/bash} esc+shift :wq
+# sudo passwd jenkins
+# visudo           (to give permissions like root   root all=(all)  all
+                                                  jenkins all=(all) nopasswd:all)
+# vim /etc/ssh/sshd-config       (passwd authentication -- no  to  yes)
+# systemctl restsrt
+# systemctl status
+
+   LOG IN TO SLAVE
+
+# useradd jenkins
+# passwd jenkins
+# visudo        {root all=(all)  all
+                  jenkins all=(all) nopasswd:all}
+# vim /etc/ssh/sshd-config       (passwd authentication -- no to yes)
+# systemctl restart sshd
+# systemctl status sshd 
+
+
+  SLAVE CONNECTED TO MASTER:
+  go back to master
+
+# su -jenkins
+# ssh -keygen    (to connect master in slave we use key ) default enter
+# ssh-copy-id jenkins@localhost      
+    
+   yes
+   passwd
+   logging mechine "ssh'jenkins@localhost'"
+   "ssh'jenkins@localhost'"
+    hostname -i
+    exit
+
+  MASTER CONNECTED TO SLAVE
+
+# ssh-copy-id jenkins@public ip
+   yes
+   passwd
+  logging mechine  "ssh 'jenkins@ publicip'"
+# "ssh'jenkins@pi'"
+# host name -i
+  
+  SLAVE-2
+
+# useradd jenkins
+# passwd jenkins
+# visudo              (root all=all all)
+                      (jenkins all=all nopassws:all)
+# vim /etc/ssh/sshd-config     (passwd authentication=no   yes)
+# systemctl restart sshd
+# systemctl status sshd
+
+  MASTER TO SLAVE2 CONNECTION
+
+# ssh-copy-id jenkins@public ip
+   yes
+   passwd
+  logging mechine  "ssh 'jenkins@ publicip of slave2'"
+# "ssh'jenkins@pi s2'"
+# host name -i
+
+  SLAVE TO MASTER
+
+# su -jenkins
+# ssh-keygen            (enter enter)
+# ssh-copy-id jenkins@localhost.
+  yes
+  passwd
+# "ssh 'jenkins@localhost'"
+  hostname-i
+
+
+
+
+
+
+
+ 
